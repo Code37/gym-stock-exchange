@@ -17,7 +17,7 @@ class StockExchangeContinuous(StockExchangeBase):
     # no_action_index is truly no_action only if it's not a Portfolio
     no_action_index = num_action_space//2
     today = 0
-    render = False
+    render = False # comment it then can use env.render() in demo
     # set to None when not using Portfolio
     action_space_min = -1.0
     action_space_max = 1.0
